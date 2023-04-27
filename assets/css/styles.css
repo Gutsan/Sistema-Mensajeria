@@ -1,0 +1,46 @@
+body{
+    display:flex;
+}
+
+.contactos{
+    width: 20%;
+    border-right:solid #4d4b3d 1px;
+}
+.contactos .perfil{
+height: 3rem;
+border-bottom: solid #4d4b3d 1px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-inline: 10px;
+}
+
+.contactos .perfil .foto .img-perfil{
+border-radius: 9rem;
+border: solid #0000;
+height: 2rem;
+width: 2rem;
+object-fit: contain;
+}
+.contactos .perfil .nom-mg{
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap:0px;
+
+}
+.contactos .perfil .nom-mg h4{
+    padding: 0;
+    margin: 0;
+}
+.contactos .perfil .nom-mg P{
+    padding: 0;
+    margin: 0;
+}
+
+.contactos .perfil .menuNav{
+    display: flex;
+    gap: 5px;
+}
