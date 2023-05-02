@@ -1,46 +1,122 @@
 body{
     display:flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contactos{
-    width: 20%;
+    flex-basis: 20%;
+    min-height:100vh;
     border-right:solid #4d4b3d 1px;
+    flex-shrink: 1;
 }
 .contactos .perfil{
 height: 3rem;
 border-bottom: solid #4d4b3d 1px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
-padding-inline: 10px;
 }
 
-.contactos .perfil .foto .img-perfil{
+.img-perfil{
 border-radius: 9rem;
 border: solid #0000;
 height: 2rem;
 width: 2rem;
 object-fit: contain;
 }
-.contactos .perfil .nom-mg{
+.nom-mg{
     height: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     gap:0px;
+}
+.nom-mg P{
+    padding: 0;
+    margin: 0;
+}
+.nom-perfil{
+    font-size: 1rem;
+    color: #1B1F21;
+}
+.estado-perfil{
+    font-size: 0.8rem;
+    color: #444749;
+}
 
-}
-.contactos .perfil .nom-mg h4{
-    padding: 0;
-    margin: 0;
-}
-.contactos .perfil .nom-mg P{
-    padding: 0;
-    margin: 0;
-}
 
 .contactos .perfil .menuNav{
     display: flex;
+    justify-content: space-around;
     gap: 5px;
+}
+
+.contenedor-btn{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #4d4b3d 1px;
+}
+
+.contenedor-btn .btn-msg{
+    height: 3rem;
+    width: 60%;
+    color: #fff;
+    background-color: #a491d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-msg:hover{
+    background-color: #CDC3E6;
+}
+.btn-msg:focus{
+    background-color: #BEC1BB;
+}
+.contenedor-btn .btn-msg a{
+    text-decoration: none;
+    color: #fff;
+}
+.pf-contacto{
+    height: 4rem;
+    border-bottom: solid #4d4b3d 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pf-contacto .foto{
+    flex-grow: 1;
+    padding: 1rem;
+}
+.pf-contacto .nom-mg{
+    flex-grow: 3;
+}
+
+.mensajes{
+    flex-basis: 80%;
+    min-height:100vh;
+    background-color:#bec1bb3c ;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-msg img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+.mensajes p{
+    padding: 0;
+    margin: 0;
+} 
+.titulo-msg{
+    font-size: 3rem;
+}
+
+.resaltar{
+    font-weight: bold;
 }
