@@ -1,6 +1,10 @@
 body{
-    display:flex;
+    padding:0;
+    margin:0;
     font-family: 'Roboto', sans-serif;
+}
+.container{
+    display:flex;
 }
 
 .contactos{
@@ -10,19 +14,19 @@ body{
     flex-shrink: 1;
 }
 .contactos .perfil{
-height: 3rem;
-border-bottom: solid #4d4b3d 1px;
-display: flex;
-justify-content: space-around;
-align-items: center;
+    height: 8.5vh;
+    border-bottom: solid #4d4b3d 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .img-perfil{
-border-radius: 9rem;
-border: solid #0000;
-height: 2rem;
-width: 2rem;
-object-fit: contain;
+    border-radius: 9rem;
+    border: solid #0000;
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
 }
 .nom-mg{
     height: 2rem;
@@ -50,10 +54,15 @@ object-fit: contain;
     display: flex;
     justify-content: space-around;
     gap: 5px;
+    margin-left: 30%;
+}
+
+.menuNav i:hover{
+color:#a491d2
 }
 
 .contenedor-btn{
-    height: 6rem;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,19 +88,28 @@ object-fit: contain;
     text-decoration: none;
     color: #fff;
 }
+.lista-contacto{
+    /* height:9.5vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .pf-contacto{
-    height: 4rem;
+    height: 9.5vh;
     border-bottom: solid #4d4b3d 1px;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     align-items: center;
 }
-.pf-contacto .foto{
-    flex-grow: 1;
+.pf-contacto:hover{
+    background-color: #CDC3E6;
+}
+.foto{
+    /* flex-grow: 1; */
     padding: 1rem;
 }
 .pf-contacto .nom-mg{
-    flex-grow: 3;
+    /* flex-grow: 3; */
 }
 
 .mensajes{
